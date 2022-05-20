@@ -1,0 +1,14 @@
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 215px;
+  height: 315px;
+}
+
+table, th, td, tr {
+  border: 1px solid black;
+}
+
+

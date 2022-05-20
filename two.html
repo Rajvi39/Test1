@@ -1,0 +1,82 @@
+
+
+
+
+
+
+<script>
+
+// Javascript simple program to
+// find elements which are
+// not present in second array
+	
+	// Function for finding elements
+	// which are there in a[] but not
+	// in b[].
+	function findMissing(a,b,n,m)
+	{
+		for (let i = 0; i < n; i++)
+		{
+			let j;
+			
+			for (j = 0; j < m; j++)
+				if (a[i] == b[j])
+					break;
+
+			if (j == m)
+				document.write(a[i] + " ");
+		}
+	}
+	
+	// Driver Code
+	let a=[ 1, 2, 6, 3, 4, 5 ];
+	let b=[2, 4, 3, 1, 0];
+	let n = a.length;
+	let m = b.length;
+	findMissing(a, b, n, m);
+	
+	
+	// This code is contributed by avanitrachhadiya2155
+	
+</script>
+
+
+<!-- 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function reult()
+		{
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = num1 * num2;
+		}
+
+function divideBy() 
+{ 
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = num1 / num2;
+}
+	</script>
+</head>
+<body>
+<form>
+1st Number : <input type="text" id="firstNumber" /><br>
+2nd Number: <input type="text" id="secondNumber" /><br>
+<input type="button" onClick="result()" Value="result" />
+
+<p>The Result is : <br>
+<span id = "result"></span>
+</p>
+</form>
+
+</body>
+</html>
+
+
+ -->

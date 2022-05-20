@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 1</title>
+	<style type="text/css">
+		body
+		{
+			text-align: center;
+			padding: 10px;
+		}
+		#Btn1
+		{
+			height: 30px;
+			width:100px;
+			border-radius: 16px;
+			
+		}
+	</style>
+	<script type="text/javascript">
+		
+		function bmi()
+		{
+			var w=parseInt(document.getElementById("1").value);
+			var x=parseInt(document.getElementById("2").value);
+			var y=parseInt(document.getElementById("3").value);
+			var z=parseInt(document.getElementById("4").value);
+
+			var bmim = w/(x*x);
+			var bmij = y/(z*z);
+
+			var ans = Boolean(bmim>bmij);
+
+			console.log("Is Mark's Mass is greater than John's Mass ? "+ans);
+
+		}
+
+	</script>
+</head>
+<body>
+		Mass of Mark:<input type="number" name="mark" id="1"><br><br>
+		Height of Mark:<input type="number" name="mark1" id="2"><br><br>
+		Mass of John:<input type="number" name="john" id="3"><br><br>
+		Height of John:<input type="number" name="john1" id="4"><br><br>
+
+		<button id="Btn1" onclick="bmi()">Compare</button>
+</body>
+</html>

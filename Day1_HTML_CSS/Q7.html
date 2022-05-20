@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice-7</title>
+		<link rel="stylesheet" type="text/css" href="q7_css.css">
+<!-- 		<script type="text/javascript">
+function getData()
+{
+    //gettting the values
+    var fname = document.getElementById("fname").value;
+    var lname= document.getElementById("lname").value; 
+    var street= document.getElementById("street").value; 
+    var city= document.getElementById("city").value; 
+    //saving the values in local storage
+    localStorage.setItem("txtValue", fname);
+    localStorage.setItem("txtValue1", password);
+    localStorage.setItem("txtValue2", street);
+    localStorage.setItem("txtValue3", city);   
+}
+		</script> -->
+</head>
+<body>
+<form action="sucess.html" method="post">
+	<fieldset>
+		<legend>Your Address</legend>
+		First Name:<input type="text" name="fname"><br><br>
+		Last Name:<input type="text" name="lname"><br><br>
+		Street:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="street"><br><br>
+		City:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="city"><br><br>
+	 </fieldset>
+	 <fieldset>
+	 	<legend>Additional Details</legend>
+	 	Biography:<textarea type="text"></textarea><br><br>
+	 	Image:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file" id="img" name="img" accept="image/*"><br><br>
+	 	Add Group:
+	 	<select>
+	 		<option>0 to 9 Years</option>
+	 		<option>10 to 19 Years</option>
+	 		<option>20 to 29 Years</option>
+	 		<option>30 to 39 Years</option>
+	 		<option>40 to 49 Years</option>	
+	 	</select>
+	 </fieldset>
+	 <fieldset>
+	 	<legend>Intrest</legend>
+	 	Hobbies:<select style="margin-left: 160px" multiple>
+      		<option>Playing soccer</option>
+      		<option>Dancing</option>
+     		<option>Gardening</option>
+      		<option>Watching Movies</option>
+      		<option>Cricket</option>
+ 	   </select><br><br>
+	 	Favourite car?<select >
+	 		<option>Volvo</option>
+	 		<option>BMW</option>
+	 		<option>Creta</option>
+	 		<option>Swift</option>
+	 	</select><br><br>
+	 	Favourite Public Transport?
+	 	<div>
+	 	<ul>
+			<li>Ground</li>
+ 			<ul>
+    			<li>Train</li>
+    			<li>Bus</li>
+  			</ul>
+ 			<li>Water</li>
+		</ul>
+</div>
+</fieldset>
+<button>Submit</button>
+<button>Reset</button>
+</form>
+</body>
+</html>

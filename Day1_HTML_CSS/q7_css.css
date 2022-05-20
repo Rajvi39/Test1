@@ -1,0 +1,14 @@
+fieldset{
+	text-align: justify;
+}
+input,textarea,select,div
+{
+	margin-left: 150px;
+}
+
+
+body
+{
+	color: white;
+	background-color: black;
+}

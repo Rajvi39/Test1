@@ -1,0 +1,19 @@
+div{
+	margin-top:7%;
+
+}
+input,textarea{
+	height:40px;
+	width: 380px;
+}
+  .input-icons i {
+            position: absolute;
+
+        }
+        .icon {
+            padding: 3px;
+            min-width: 40px;
+            margin-top: 10px;
+            margin-left: -15px;
+
+        }

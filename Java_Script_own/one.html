@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS-1</title>
+
+	<!-- <script type="text/javascript">
+
+		/*DHRUPAL RUN*/
+		var mom=prompt("enter Mass Of Mark");
+		var hom=prompt("enter Height of mark");
+		var moj=prompt("enter Mass Of John");
+		var hoj=prompt("enter Height of john");
+
+		var BMIM = mom/(hom*hom);
+		var BMIJ = moj/(hoj*hoj);
+
+		var ans=Boolean(BMIM>BMIJ);
+
+		/alert(ans)/;
+
+		console.log("Is Mark's Mass is greter Than John's Mass ?   "+ans);
+
+	</script> -->
+	
+<script type="text/javascript">
+ var markMass; var markHeight; var johnMass; var johnHeight; var markBMI; var johnBMI;
+markMass = prompt('What is Mark\'s Mass?' );
+markHeight = prompt('What is Mark\'s Height?' );
+johnMass = prompt('What is John\'s Mass?' );
+johnHeight = prompt('What is John\'s Height?' );
+
+markBMI = markMass / (markHeight * markHeight);
+johnBMI = johnMass / (johnHeight * johnHeight);
+
+
+var markBiggerBMI   =markBMI > johnBMI;
+console.log("Is Mark's Mass is greter Than John's Mass ?   "+ans);
+
+console.log(markBMI, johnBMI);
+
+if(markBMI > johnBMI){
+  console.log('Mark\'s BMI is bigger than John\'s');
+}
+else {
+  console.log('John\'s BMI is bigger than Mark\'s');
+}
+</script>
+</head>
+<body>
+
+</body>
+</html>

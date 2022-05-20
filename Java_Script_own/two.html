@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS2</title>
+	<script type="text/javascript">
+		var Johnavg=(89+120+103)/3;
+		var mikeavg=(116+94+123)/3;
+		var maryavg=(97+134+105)/3;
+	/*	var Johnavg=(2+2+2)/3;
+		var mikeavg=(2+2+20)/3;
+		var maryavg=(2+2+20)/3;*/
+		console.log('John Team Avg:'+Johnavg+" "+'Mike Team  Avg:'+mikeavg+" "+'Mary Team  Avg:'+maryavg);
+		if(Johnavg>mikeavg&&Johnavg>maryavg)
+		{
+			console.log("Joh team wins");
+		}
+		else if(mikeavg>Johnavg&&mikeavg>maryavg)
+		{
+			console.log("mike team wins");
+		}
+		else if(maryavg>Johnavg&&maryavg>mikeavg)
+		{
+			console.log("mary team wins");
+		}
+		else if(Johnavg==mikeavg&& Johnavg>maryavg){
+			console.log("Tie-----john and mike teams are");
+		}
+		else if (Johnavg==maryavg&& Johnavg>mikeavg) {
+			console.log("Tie-----john and mary teams are");
+		}
+		else if (mikeavg==maryavg&&mikeavg>Johnavg) {
+			console.log("Tie-----mike and mary teams are");
+		}
+		else
+		{
+			console.log("tie");
+		}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

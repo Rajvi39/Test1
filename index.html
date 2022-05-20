@@ -1,0 +1,70 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test-1</title>	
+	
+	
+<script type="text/javascript">
+	 function myFunction(){
+	
+
+switch(arithmatic) {
+  case'add':
+  		 a=Number(document.my_cal.op1.value);
+      	 b=Number(document.my_cal.op2.value);
+         c=a+b;
+         document.my_cal.total.value=c;
+    break;
+ case'sub':
+  		 a=Number(document.my_cal.op1.value);
+      	 b=Number(document.my_cal.op2.value);
+         c=a-b;
+         document.my_cal.total.value=c;
+    break;
+    case'mul':
+  		 a=Number(document.my_cal.op1.value);
+      	 b=Number(document.my_cal.op2.value);
+         c=a*b;
+         document.my_cal.total.value=c;
+    break;
+    case'div':
+  		 a=Number(document.my_cal.op1.value);
+      	 b=Number(document.my_cal.op2.value);
+         c=a/b;
+         document.my_cal.total.value=c;
+    break;
+  default:
+   alert("welcome");
+}
+
+
+     }
+	   
+</script>
+
+	
+</head>
+<body>
+<form name="my_cal">
+	<label>op1:</label>
+	<input type="number" name="op1">
+	<label>Select one Opration:</label>
+	<select name="arithmatic">
+  		 <option value="add">+</option>
+ 		 <option value="sub">-</option>
+ 		 <option value="mul">*</option>
+ 		 <option value="div">/</option>
+	</select>
+	<label>op2:</label>
+	<input type="number" name="op2">
+	<button onclick="myFunction()">Click me</button>
+<!-- <input type="button" value="result" onclick="javascript:result();"> -->
+<label>Result</label>
+<input type="textbox"  name="total" onclick="javascript:myFunction()"; readonly>
+
+</form>
+</body>
+</html>
+
+

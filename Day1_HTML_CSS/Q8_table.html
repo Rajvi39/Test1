@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice-8(table)</title>
+	<link rel="stylesheet" type="text/css" href="q8_css.css">
+
+</head>
+<body>
+<center>
+<div class="div1">
+<form>
+	<table>
+		<tr>
+			<th>Personal Informatio</th>
+		</tr>
+		<tr>
+			<td>First Name:</td>
+			<td><input type="text" name="fname" required ></td>
+		</tr>
+		<tr>
+			<td>Last Name:</td>
+			<td><input type="text" name="lname"></td>
+		</tr>
+		<tr>
+			<td>Birth date:</td>
+			<td><input type="date" name="date" required ></td>
+		</tr>
+		<tr>
+				<td>Gender:</td>
+				<td><select id="mf">
+					<option>Choose a gender</option>
+					<option>Male</option>
+					<option>Female</option>
+					</select>
+				</td>
+	</tr>
+	<tr>
+		<th>Acoount Information</th>
+	</tr>
+	<tr>
+		<td>Email:</td>
+		<td><input type="text" name="email" required ></td>
+	</tr>
+	<tr>
+		<td>Retype-Email:</td>
+		<td><input type="text" name="r_email" required ></td>
+	</tr>
+	<tr>
+		<td>Password:</td>
+		<td><input type="password" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required ></td>
+	</tr>
+	<tr>
+		<td>Security Question:</td>
+		<td><select>
+		<option>Choose a security Questions</option>
+		<option>Childhood friendname</option>
+		<option>nick name</option>
+		<option>first school name</option>
+		</select>
+	</td>
+	</tr>
+	<tr>
+		<td>Security Answer</td>
+		<td><input type="text" name="security"></td>
+	</tr>
+	<tr>
+		<th>Contact Information</th>
+	</tr>
+	<tr>
+		<td>Adrees:</td>
+		<td><input type="text" name="add" ></td>
+	</tr>
+	<tr>
+		<td>City:</td>
+		<td><input type="text" name="City" ></td>
+	</tr>
+	<tr>
+		<td>State:</td>
+		<td><select>
+		<option>Gujrat</option>
+		<option>Rajstan</option>
+		<option>MP</option>	
+		<option>MH</option>
+	</select></td>
+	</tr>
+	<tr>
+		<td>Zip:</td>
+		<td><input type="text" name="zip" size="5" ></td>
+		<td><input type="text" name="optional" placeholder="optional" size="4"></td>
+	</tr>
+	<tr>
+		<td>Phone:</td>
+		<td><input type="" name="phone" maxlength="10" pattern="[7-9]{1}[0-9]{9}"></td>
+		<td><select>
+		<option>Mobile</option>
+	</select></td>
+	</tr>
+	<tr>
+		<td>
+			<input type="submit" name="submit" class="button1">
+		</td>
+		<td>
+			<input type="reset" name="submit" class="button2">
+		</td>
+
+	</tr>
+	</table>
+</form>
+</div>
+</center>
+</body>
+</html>

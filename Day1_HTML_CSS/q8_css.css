@@ -1,0 +1,38 @@
+.div1
+{
+	height:900px;
+	width:500px;
+}
+
+form{
+	
+	 border-width:5px; 
+	 border-style:solid;
+
+}
+h3
+{
+	text-align: left;
+}
+
+/*label
+{
+	margin-right: 100px;
+}*/
+#mf
+{
+	margin-right:50px;
+}
+h5{
+	margin-top: 5px;
+}
+
+.button1,.button2
+{
+	margin-left: 50px;
+	margin-top: 40px;
+	border-radius: 20px;
+	height: 40px;
+	width: 80px;
+}
+
