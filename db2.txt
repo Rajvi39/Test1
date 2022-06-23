@@ -1,0 +1,68 @@
+CREATE TABLE `cybercom`.`user` (
+  `userId` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(32) NOT NULL,
+  `dob` DATE NOT NULL,
+  `gender` VARCHAR(8) NOT NULL,
+  `email` VARCHAR(32) NOT NULL,
+  `phoneNum` VARCHAR(16) NOT NULL,
+  `isActie` TINYINT NULL,
+  PRIMARY KEY (`userId`),
+  UNIQUE INDEX `userId_UNIQUE` (`userId` ASC) VISIBLE,
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE);
+  
+  
+  CREATE TABLE `cybercom`.`user_addresses` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `userId` INT NOT NULL,
+  `homeNum` VARCHAR(8) NOT NULL,
+  `street` VARCHAR(16) NOT NULL,
+  `city` VARCHAR(16) NOT NULL,
+  `pincode` VARCHAR(16) NOT NULL,
+  `state` VARCHAR(16) NOT NULL,
+  `country` VARCHAR(16) NOT NULL,
+  `isActive` TINYINT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE,
+  INDEX `userId_idx` (`userId` ASC) VISIBLE,
+  CONSTRAINT `userId`
+    FOREIGN KEY (`userId`)
+    REFERENCES `cybercom`.`user` (`userId`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+
+CREATE TABLE `cybercom`.`order` (
+  `orderId` INT NOT NULL AUTO_INCREMENT,
+  `userId` INT NOT NULL,
+  `amount` DOUBLE NOT NULL,
+  `oderDate` DATE NOT NULL,
+  `orderStatus` VARCHAR(16) NOT NULL,
+  `paymentStatus` VARCHAR(16) NOT NULL,
+  `phoneNum` VARCHAR(16) NOT NULL,
+  PRIMARY KEY (`orderId`),
+  INDEX `userId_idx` (`userId` ASC) VISIBLE,
+  CONSTRAINT `userId`
+    FOREIGN KEY (`userId`)
+    REFERENCES `cybercom`.`user` (`userId`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+
+CREATE TABLE `cybercom`.`orderaddress` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `personId` INT NOT NULL,
+  `userAddressId` INT NOT NULL,
+  `type` TINYINT NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `personId_idx` (`personId` ASC) VISIBLE,
+  INDEX `userAddressId_idx` (`userAddressId` ASC) VISIBLE,
+  CONSTRAINT `personId`
+    FOREIGN KEY (`personId`)
+    REFERENCES `cybercom`.`user` (`userId`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `userAddressId`
+    FOREIGN KEY (`userAddressId`)
+    REFERENCES `cybercom`.`user_addresses` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
